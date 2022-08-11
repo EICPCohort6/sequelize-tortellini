@@ -17,15 +17,12 @@ let classes = connection.define(
         type: DataTypes.STRING,
         allowNull: false
       }, 
-      class_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-      },
       instructor_id: {
         type: DataTypes.INTEGER,
         allowNull: false
       },
       room_id: DataTypes.INTEGER,
+      course_id: DataTypes.INTEGER
   },
   {
     createdAt: false,

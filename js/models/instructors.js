@@ -12,10 +12,6 @@ let instructors = connection.define(
       first_name: DataTypes.STRING,
       last_name: DataTypes.STRING,
       date_of_birth: DataTypes.DATE,
-      duration: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-      },
       email: DataTypes.STRING,
       phone_number: DataTypes.STRING,
       city: DataTypes.STRING,

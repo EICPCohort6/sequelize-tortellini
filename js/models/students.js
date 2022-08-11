@@ -11,7 +11,7 @@ let students = connection.define(
    },
    first_name: DataTypes.STRING,
    last_name: DataTypes.STRING,
-   data_of_birth: DataTypes.DATE,
+   date_of_birth: DataTypes.DATE,
    email: DataTypes.STRING,
    phone_number: DataTypes.STRING(30),
    city: DataTypes.STRING,
@@ -22,6 +22,12 @@ let students = connection.define(
     allowNull: false,
     type: DataTypes.INTEGER
    }
+  },
+  {
+    createdAt: false,
+    updatedAt: false,
+    underscored: true
+    
   }
 );
 
